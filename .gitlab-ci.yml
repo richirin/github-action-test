@@ -1,0 +1,11 @@
+image: node
+
+test:
+  stage: test
+  tags:
+    - gitlab-org-docker
+  before_script:
+    - npm install
+    - npm install codeceptjs playwright
+  script:
+    - npm run test

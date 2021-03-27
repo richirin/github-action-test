@@ -1,0 +1,306 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-03-27T01:55:15.423Z",
+    "end": "2021-03-27T01:55:29.018Z",
+    "duration": 13595,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 2,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "cc2d8fbb-4fc9-4030-b081-bdb641cd542e",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ab0d1246-a833-4387-8322-c49465626865",
+          "title": "Article",
+          "fullFile": "C:\\Users\\rchez\\Desktop\\Pertemuan ke 4\\Sudah Install\\tests\\create-article.js",
+          "file": "\\tests\\create-article.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite",
+              "fullTitle": "Article \"before all\" hook: codeceptjs.beforeSuite",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "e20fe321-38e3-4d4f-9a70-8dbd9801ca46",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before",
+              "fullTitle": "Article \"before each\" hook: codeceptjs.before",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "f1fdd20c-2eec-4830-86f7-2b0ca5b5ff87",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite",
+              "fullTitle": "Article \"after all\" hook: codeceptjs.afterSuite",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "0fe55513-fcf0-4b8e-ae60-d3abec0c739c",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs",
+              "fullTitle": "Article \"after each\" hook: finalize codeceptjs",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "867e02df-25ab-49f4-9cb2-f7a257671c4f",
+              "parentUUID": null,
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Create Article",
+              "fullTitle": "Article: Create Article",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I }) => {\n    I.login('poiqwe1234524@gmail.com', 'poiqwe123456', 'richirin')\n    I.click('New Article')\n    I.waitForVisible({css:'input[formcontrolname=title]'}, process.env.TIMEOUT)\n    I.fillField({css:'input[formcontrolname=title]'}, articleTitle)\n    I.fillField({css:'input[formcontrolname=description]'}, articleDescription)\n    I.fillField({css:'textarea[formcontrolname=body]'}, article)\n    I.click({css:'button[type=button]'})\n    I.waitForText('Edit Article', process.env.TIMEOUT)",
+              "err": {},
+              "uuid": "a8fa87f5-6f34-4a12-9aa6-1bf408ee2ddf",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": true
+            },
+            {
+              "title": "login singkat",
+              "fullTitle": "Article: login singkat",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I }) => {\n    I.amOnPage('/')\n    I.click('Sign in')\n    I.fillField({css:'input[placeholder=Email]'}, 'poiqwe1234524@gmail.com')\n    I.fillField({css:'input[placeholder=Password]'}, 'poiqwe123456')\n    I.click({css:'button[type=submit]'})\n    I.see('richirin')",
+              "err": {},
+              "uuid": "8526108d-ee4c-4620-b32e-8b5f2634c409",
+              "parentUUID": null,
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "a8fa87f5-6f34-4a12-9aa6-1bf408ee2ddf",
+            "8526108d-ee4c-4620-b32e-8b5f2634c409"
+          ],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        },
+        {
+          "uuid": "25b2347d-8d31-4c6e-b041-c1fe71e2ca5d",
+          "title": "Login",
+          "fullFile": "C:\\Users\\rchez\\Desktop\\Pertemuan ke 4\\Sudah Install\\tests\\login.js",
+          "file": "\\tests\\login.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook: codeceptjs.beforeSuite in \"Login\"",
+              "fullTitle": "Login \"before all\" hook: codeceptjs.beforeSuite in \"Login\"",
+              "timedOut": false,
+              "duration": 678,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteSetup(suite)",
+              "err": {},
+              "uuid": "4bc43cef-5a07-4124-8093-a26fe343065d",
+              "parentUUID": "25b2347d-8d31-4c6e-b041-c1fe71e2ca5d",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"before each\" hook: codeceptjs.before in \"Login\"",
+              "fullTitle": "Login \"before each\" hook: codeceptjs.before in \"Login\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.setup(suite)",
+              "err": {},
+              "uuid": "8ff77774-1121-434f-a448-dd3aab3abf01",
+              "parentUUID": "25b2347d-8d31-4c6e-b041-c1fe71e2ca5d",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook: codeceptjs.afterSuite in \"Login\"",
+              "fullTitle": "Login \"after all\" hook: codeceptjs.afterSuite in \"Login\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.suiteTeardown(suite)",
+              "err": {},
+              "uuid": "c47d67a8-2a0d-4775-a206-eefbe1cef628",
+              "parentUUID": "25b2347d-8d31-4c6e-b041-c1fe71e2ca5d",
+              "isHook": true,
+              "skipped": false
+            },
+            {
+              "title": "\"after each\" hook: finalize codeceptjs in \"Login\"",
+              "fullTitle": "Login \"after each\" hook: finalize codeceptjs in \"Login\"",
+              "timedOut": false,
+              "duration": 6,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "scenario.teardown(suite)",
+              "err": {},
+              "uuid": "c60b5358-a8bc-4c5c-b650-004c869fc664",
+              "parentUUID": "25b2347d-8d31-4c6e-b041-c1fe71e2ca5d",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Create data menggunakan API",
+              "fullTitle": "Login: Create data menggunakan API",
+              "timedOut": false,
+              "duration": 12901,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "I }) => {\n    // buka homepage\n    await I.amOnPage('/')\n    // click sign in\n    await I.click('Sign in')\n    // verify text\n    await I.waitForText('Need an account?', process.env.TIMEOUT)\n    // mengisi form login\n    await I.fillField({ css: 'input[placeholder=Email]' }, 'poiqwe1234524@gmail.com')\n    await I.fillField({ css: 'input[placeholder=Password]' }, 'poiqwe123456')\n    await I.click({ css: 'button[type=submit]' })\n    // verify \n    await I.see('richirin')\n    await I.click('richirin')\n    await I.dontSee(generateTitle);\n    // hit api get token\n    response = await getToken(dataToken);\n    // hit api create article\n    dataArticle.article.title = generateTitle;\n    response = await createArticle(response.body.user.token, dataArticle)\n    await I.amOnPage('/')\n    await I.see('richirin')\n    await I.click('richirin')\n    await I.see(generateTitle)",
+              "err": {},
+              "uuid": "85359812-fe70-46a3-8cfb-92c645b0d347",
+              "parentUUID": "25b2347d-8d31-4c6e-b041-c1fe71e2ca5d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "85359812-fe70-46a3-8cfb-92c645b0d347"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12901,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 0
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.3.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "index.html",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": "reportDir=output,reportFilename=index.html",
+      "version": "5.2.0"
+    }
+  }
+}

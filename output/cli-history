@@ -1,0 +1,8 @@
+
+
+<<< Recorded commands on Sat Mar 06 2021 11:33:12 GMT+0700 (Western Indonesia Time)
+I.click('Sign in')
+I.fillField({css:'input[placeholder=Email]'}, 'poiqwe1234524@gmail.com')
+I.fillField({css:'input[placeholder=Password]'}, 'poiqwe123456')
+I.click({css:'button[type=submit]'})
+I.see('richirin')

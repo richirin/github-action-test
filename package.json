@@ -1,0 +1,22 @@
+{
+  "name": "realworld",
+  "version": "1.0.0",
+  "description": "UI Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "codeceptjs run --reporter mochawesome --reporter-options reportDir=output,reportFilename=index.html",
+    "parallel": "codeceptjs run-workers --suites 2 --reporter mochawesome --reporter-options reportDir=output,reportFilename=index.html"
+  },
+  "author": "Richi",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "codeceptjs": "^3.0.5",
+    "dotenv": "^8.2.0",
+    "faker": "^5.4.0",
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2",
+    "playwright": "^1.10.0",
+    "supertest": "^6.1.3"
+  }
+}
